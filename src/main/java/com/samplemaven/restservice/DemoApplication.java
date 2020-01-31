@@ -19,7 +19,7 @@ public class DemoApplication {
 	@GetMapping(value = "/world")
 	public TestModel getHelloWorlde() {
 		TestModel testModel = new TestModel();
-		testModel.name = "JC Cabili Update changes only";
+		testModel.name = "JC Cabili Update Online";
 		testModel.order = 1;
 
 		return testModel;
