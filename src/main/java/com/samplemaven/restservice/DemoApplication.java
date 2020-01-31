@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-
 @SpringBootApplication
 @RestController
 @RequestMapping("hello")
@@ -17,7 +16,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@GetMapping(value="/world")
+	@GetMapping(value = "/world")
 	public TestModel getHelloWorlde() {
 		TestModel testModel = new TestModel();
 		testModel.name = "JC Cabili";
@@ -25,6 +24,5 @@ public class DemoApplication {
 
 		return testModel;
 	}
-	
 
 }
